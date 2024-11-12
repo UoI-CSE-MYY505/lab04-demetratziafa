@@ -21,6 +21,8 @@ arrayNotSorted: .word marianna, markos, maria
             la   a0, arrayNotSorted
             li   a1, 4
             jal  recCheck
+            li a2,10
+            li,a3,10
 
             li   a7, 10
             ecall
@@ -31,7 +33,7 @@ str_ge:
 #  You may move jr ra   if you wish.
 #---------
             jr   ra
- 
+         
 # ----------------------------------------------------------------------------
 # recCheck(array, size)
 # if size == 0 or size == 1
